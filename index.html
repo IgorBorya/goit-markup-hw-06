@@ -40,11 +40,67 @@
                 </svg>
             </button>
         </div>
+        <div class="mob-menu">
+            <div>
+                <button type="button" class="menu-close-btn">
+                    <svg class="mob-menu-svg" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="mob-menu-list">
+                        <li class="mob-menu-li"><a href="./index.html" class="mob-menu-item">Studio</a></li>
+                        <li class="mob-menu-li"><a href="" class="mob-menu-item">Portfolio</a></li>
+                        <li class="mob-menu-li"><a href="" class="mob-menu-item">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="mob-menu-address">
+                    <ul class="mob-menu-address-list">
+                        <li class="mob-menu-address-li"><a href="tel:+110001111111" class="mob-menu-address-item">+11
+                                (000)
+                                111-11-11</a></li>
+                        <li class="mob-menu-address-li"><a href="mailto:info@devstudio.com"
+                                class="mob-menu-address-item">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+            </div>
+            <ul class="mob-menu-socmedia-list">
+                <li class="mob-menu-socmedia-li">
+                    <a href="" class="mob-menu-socmedia-item">
+                        <svg class="mob-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-menu-socmedia-li">
+                    <a href="" class="mob-menu-socmedia-item">
+                        <svg class="mob-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-menu-socmedia-li">
+                    <a href="" class="mob-menu-socmedia-item">
+                        <svg class="mob-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-menu-socmedia-li">
+                    <a href="" class="mob-menu-socmedia-item">
+                        <svg class="mob-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
     </header>
 
     <main>
 
-        <section class="hero-image ">
+        <section class="hero-image">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button type="button" class="hero-button">Order Service</button>
@@ -271,7 +327,18 @@
                 <ul class="fourth-ul">
                     <li class="card">
                         <div class="fourthsection_firstdiv">
-                            <img src="./images/Banking_App.jpg" width="360" height="300" alt="Banking App Photo" />
+                            <picture>
+                                <source srcset="./images/Banking_App.jpg 1x, ./images/Banking_App_x2.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/Banking_App_tablet_x1.jpg 1x, ./images/Banking_App_tablet_x2.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Banking_App_mobile_x1.jpg 1x, ./images/Banking_App_mobile_x2.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/Banking_App.jpg" width="360" height="300" alt="Banking App Photo" />
+                            </picture>
+
                             <p class="firstdivp">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                 Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -284,9 +351,20 @@
                     </li>
                     <li class="card">
                         <div class="fourthsection_firstdiv">
-                            <img src="./images/Cashless_Payment.jpg" width="360" height="300"
-                                alt="Cashless Payment Photo" />
-                            <p class="firstdivp">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
+                            <picture>
+                                <source srcset="./images/Cashless_Payment.jpg x1, ./images/Cashless_Payment_x2.jpg x2"
+                                    media=" (min-width: 1158px)">
+                                <source
+                                    srcset="./images/Cashless_Payment_tablet_x1.jpg x1, ./images/Cashless_Payment_tablet_x2.jpg x2"
+                                    media=" (min-width: 768px)">
+                                <source
+                                    srcset="./images/Cashless_Payment_mobile_x1.jpg x1, ./images/Cashless_Payment_mobile_x2.jpg x2"
+                                    media=" (max-width: 767px)">
+                                <img src="./images/Cashless_Payment.jpg" width="360" height="300"
+                                    alt="Cashless Payment Photo" />
+                            </picture>
+                            <p class="firstdivp">14 Stylish and User-Friendly App Design Concepts · Task Manager App
+                                ·
                                 Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
@@ -298,8 +376,19 @@
                     </li>
                     <li class="card">
                         <div class="fourthsection_firstdiv">
-                            <img src="./images/Meditation_App.jpg" width="360" height="300"
-                                alt="Meditation App Photo" />
+                            <picture>
+                                <source srcset="./images/Meditation_App.jpg x1, ./images/Meditation_App_x2.jpg x2"
+                                    media=" (min-width: 1158px)">
+                                <source
+                                    srcset="./images/Meditation_App_tablet_x1.jpg x1, ./images/Meditation_App_tablet_x2.jpg x2"
+                                    media=" (min-width: 768px)">
+                                <source
+                                    srcset="./images/Meditation_App_mobile_x1.jpg x1, ./images/Meditation_App_mobile_x2.jpg x2"
+                                    media=" (max-width: 767px)">
+                                <img src="./images/Meditation_App.jpg" width="360" height="300"
+                                    alt="Meditation App Photo" />
+                            </picture>
+
                             <p class="firstdivp">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                 Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -312,7 +401,19 @@
                     </li>
                     <li class="card">
                         <div class="fourthsection_firstdiv">
-                            <img src="./images/Taxi_Service.jpg" width="360" height="300" alt="Taxi Service Photo" />
+                            <picture>
+                                <source srcset="./Taxi_Service.jpg x1, ./images/Taxi_Service_x2.jpg x2"
+                                    media=" (min-width: 1158px)">
+                                <source
+                                    srcset="./images/Taxi_Service_tablet_x1.jpg x1, ./images/Taxi_Service_tablet_x2.jpg x2"
+                                    media=" (min-width: 768px)">
+                                <source
+                                    srcset="./images/Taxi_Service_mobile_x1.jpg x1, ./images/Taxi_Service_mobile_x2.jpg x2"
+                                    media=" (max-width: 767px)">
+                                <img src="./images/Taxi_Service.jpg" width="360" height="300"
+                                    alt="Taxi Service Photo" />
+                            </picture>
+
                             <p class="firstdivp">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                 Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -325,8 +426,18 @@
                     </li>
                     <li class="card">
                         <div class="fourthsection_firstdiv">
-                            <img src="./images/Screen_Illustrations.jpg" width="360" height="300"
-                                alt="Screen Illustrations Photo" />
+                            <picture>
+                                <source srcset="./Screen_Illustrations.jpg x1, ./images/Screen_Illustrations_x2.jpg x2"
+                                    media=" (min-width: 1158px)">
+                                <source
+                                    srcset="./images/Screen_Illustrations_tablet_x1.jpg x1, ./images/Screen_Illustrations_tablet_x2.jpg x2"
+                                    media=" (min-width: 768px)">
+                                <source
+                                    srcset="./images/Screen_Illustrations_mobile_x1.jpg x1, ./images/Screen_Illustrations_mobile_x2.jpg x2"
+                                    media=" (max-width: 767px)">
+                                <img src="./images/Screen_Illustrations.jpg" width="360" height="300"
+                                    alt="Screen Illustrations Photo" />
+                            </picture>
                             <p class="firstdivp">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                 Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -339,8 +450,19 @@
                     </li>
                     <li class="card">
                         <div class="fourthsection_firstdiv">
-                            <img src="./images/Online_Courses.jpg" width="360" height="300"
-                                alt="Online Courses Photo" />
+                            <picture>
+                                <source srcset="./Online_Courses.jpg x1, ./images/Online_Courses_x2.jpg x2"
+                                    media=" (min-width: 1158px)">
+                                <source
+                                    srcset="./images/Online_Courses_tablet_x1.jpg x1, ./images/Online_Courses_tablet_x2.jpg x2"
+                                    media=" (min-width: 768px)">
+                                <source
+                                    srcset="./images/Online_Courses_mobile_x1.jpg x1, ./images/Online_Courses_mobile_x2.jpg x2"
+                                    media=" (max-width: 767px)">
+                                <img src="./images/Online_Courses.jpg" width="360" height="300"
+                                    alt="Online Courses Photo" />
+                            </picture>
+
                             <p class="firstdivp">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                 Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -367,7 +489,7 @@
                     growth
                     solutions.</p>
             </div>
-            <div>
+            <div class="soc-med-div">
                 <p class="socmedia">Social media</p>
                 <ul class="socmediaul">
                     <li class="socmediali">
@@ -417,7 +539,7 @@
 
         </div>
     </footer>
-    <div class="backdrop">
+    <!--<div class="backdrop">
         <div class="modal">
             <button type="button" class="modal-open-btn">
                 <svg class="svg-open" width="8" height="8">
