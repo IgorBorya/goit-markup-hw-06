@@ -123,6 +123,7 @@ p {
   .page-nav {
     display: flex;
     gap: 40px;
+    padding: 0;
   }
 
   .page-nav .link {
@@ -444,7 +445,7 @@ p {
 }
 
 .benefits-headlines {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -457,7 +458,6 @@ p {
   text-align: left;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 .team {
@@ -548,7 +548,7 @@ p {
 }
 
 .fourth-section {
-  padding: 96px 0;
+  padding: 120px 0;
 }
 
 .portfolio-headlines {
@@ -661,6 +661,7 @@ p {
 .logfoot {
   font-weight: 700;
   font-size: 18px;
+  padding: 0;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -704,6 +705,7 @@ p {
   flex-direction: row;
   gap: 16px;
   padding: 0;
+  margin: 0;
 }
 
 .socmediali {
@@ -1072,6 +1074,11 @@ p {
         url(../images/hero_tablet_x2.jpg);
     }
   }
+
+  .hero-button {
+    margin-top: 32px;
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.5;
@@ -1103,7 +1110,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 64px;
+    gap: 64px 24px;
   }
 
   .fourth-ul {
@@ -1182,6 +1189,11 @@ p {
         url(../images/hero_desktop_x2.jpg);
     }
   }
+
+  .hero-button {
+    margin-top: 48px;
+  }
+
   .hero-button:hover,
   .hero-button:focus {
     background: #404bbf;
